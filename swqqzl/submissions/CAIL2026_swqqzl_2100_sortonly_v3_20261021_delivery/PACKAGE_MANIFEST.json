@@ -1,0 +1,14 @@
+{
+  "CAIL2026_swqqzl_Qwen38_thinking_T06_prelim2100_sortonly_v3_submission.zip": {
+    "bytes": 72740,
+    "sha256": "76df7667c8651e68d0cc5eb1f566e678d23d5100bac7f1fcd39a0cbba1f0e236",
+    "members": 1,
+    "CRC": "PASS"
+  },
+  "CAIL2026_swqqzl_Qwen38_thinking_T06_prelim2100_sortonly_v3_handoff.zip": {
+    "bytes": 65190325,
+    "sha256": "773285a7f83d2ef3a4dc17ae84f0bf835f3eead7096004300921b1b8ab998176",
+    "members": 41,
+    "CRC": "PASS"
+  }
+}

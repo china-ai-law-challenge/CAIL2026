@@ -1,0 +1,12 @@
+剩余10条WARN：全部为原版责任字段一致性警告，原样保留，不做实体改判。
+
+CAIL2026-109123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-109311 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-109425 organized_infringement=true 但 organizer_liability 未体现组织者责任
+CAIL2026-109770 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-110123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-110304 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-110354 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-110441 organized_infringement=false 但 organizer_liability 非「不承担责任」
+CAIL2026-110586 organized_infringement=true 但 organizer_liability 未体现组织者责任
+CAIL2026-111132 organized_infringement=false 但 organizer_liability 非「不承担责任」
