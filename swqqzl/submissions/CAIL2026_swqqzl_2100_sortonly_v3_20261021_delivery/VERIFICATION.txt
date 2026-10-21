@@ -1,0 +1,139 @@
+CAIL2026 涉网侵权治理2100条 v3：仅保留134条排序修正，责任判断全部恢复原版
+Checked at: 2026-10-21T02:57:27.538993+00:00
+Changed field vs original: prediction.task_C.priority_order, exactly 134 rows/134 fields.
+Restored from v2: prediction.task_B.organized_infringement true->false on 8 rows; prediction.task_B.organizer_liability joint->不承担责任 on 2 rows.
+All 2100 task_B blocks, task_A blocks, citations and disposal_measures exactly equal the original. The ten responsibility rows equal the complete original rows byte-for-byte.
+Official checker: ERROR=0 WARN=10; zero sorting warnings; the ten responsibility warnings match the original warnings verbatim. They are retained, not suppressed or converted into new answers.
+Original predictions SHA256: 72929a96f039d40ec442f5d656c061817c5ac9ab485dd3f06326746626711232
+Reference v2 predictions SHA256: 00c90605e2004afe176349208e725e45f83ec306390bf562570b78ab508537e8
+Modified v3 predictions SHA256: 2771caf1992f71a71f969637a0a11081c19eabdd12f5bdda4a651975bd38bf56
+MODIFIED_FILE: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/MODIFIED_FILE.jsonl
+DIFF_FILE: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/DIFF_FILE.patch
+VERIFICATION: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/VERIFICATION.txt
+ROLLBACK: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/ROLLBACK.sh
+
+BASELINE
+Exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/VERIFY_SORTONLY.py baseline
+Input: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/prediction.jsonl
+Literal stdout:
+BASELINE PASS rows=2100 ERROR=0 WARN=144
+Literal stderr: ''
+Exit status: 0
+Official exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/check_submission.py --pred /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/prediction.jsonl --data /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/inputs.jsonl --labels /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/labels.json
+Official exit status: 0
+Official literal stdout:
+提交文件        : /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/prediction.jsonl
+样本数          : 2100
+ERROR           : 0
+WARN            : 144
+  ! CAIL2026-109113 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M04', 'M05', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109131 priority_order 未按紧迫度序列排序（期望 ['M03', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109165 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109175 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109184 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M06', 'M14', 'M09', 'M13', 'M15']）
+  ! CAIL2026-109218 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M12', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109220 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M12', 'M04', 'M05', 'M06', 'M07', 'M08', 'M14', 'M09', 'M13', 'M15']）
+  ! CAIL2026-109241 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109252 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109263 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M04', 'M05', 'M06', 'M07', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109268 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109272 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M04', 'M05', 'M06', 'M08', 'M13', 'M15']）
+  ! CAIL2026-109277 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M05', 'M06', 'M13']）
+  ! CAIL2026-109279 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M08', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109286 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M04', 'M05', 'M07', 'M13', 'M15', 'M16']）
+  ! CAIL2026-109292 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M04', 'M05', 'M06', 'M07', 'M09', 'M10', 'M13', 'M15', 'M16']）
+  ! CAIL2026-109301 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109311 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109321 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M12', 'M05', 'M06', 'M14', 'M09', 'M13', 'M15']）
+  … 其余 124 条略
+结果            : 通过（无 ERROR），但有 144 条警告需逐条确认
+
+PREVIOUS_V2
+Exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/VERIFY_SORTONLY.py previous_v2
+Input: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/REFERENCE_V2_prediction.jsonl
+Literal stdout:
+PREVIOUS_V2 PASS rows=2100 ERROR=0 WARN=0
+Literal stderr: ''
+Exit status: 0
+Official exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/check_submission.py --pred /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/REFERENCE_V2_prediction.jsonl --data /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/inputs.jsonl --labels /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/labels.json
+Official exit status: 0
+Official literal stdout:
+提交文件        : /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/original/REFERENCE_V2_prediction.jsonl
+样本数          : 2100
+ERROR           : 0
+WARN            : 0
+结果            : 通过（无 ERROR、无警告）
+
+MODIFIED
+Exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/VERIFY_SORTONLY.py modified
+Input: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/MODIFIED_FILE.jsonl
+Literal stdout:
+MODIFIED PASS rows=2100 ERROR=0 WARN=10 priority_fixed=134 responsibility_restored=10 task_B_original_exact=2100
+Literal stderr: ''
+Exit status: 0
+Official exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/check_submission.py --pred /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/MODIFIED_FILE.jsonl --data /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/inputs.jsonl --labels /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/labels.json
+Official exit status: 0
+Official literal stdout:
+提交文件        : /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/MODIFIED_FILE.jsonl
+样本数          : 2100
+ERROR           : 0
+WARN            : 10
+  ! CAIL2026-109123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109311 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109425 organized_infringement=true 但 organizer_liability 未体现组织者责任
+  ! CAIL2026-109770 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-110123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-110304 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-110354 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-110441 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-110586 organized_infringement=true 但 organizer_liability 未体现组织者责任
+  ! CAIL2026-111132 organized_infringement=false 但 organizer_liability 非「不承担责任」
+结果            : 通过（无 ERROR），但有 10 条警告需逐条确认
+
+ROLLBACK
+Exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/VERIFY_SORTONLY.py rollback
+Input: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/rollback_test/prediction.jsonl
+Literal stdout:
+ROLLBACK PASS rows=2100 ERROR=0 WARN=144 original_restored=true delivered_v3_unchanged=true
+Literal stderr: ''
+Exit status: 0
+Official exact command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/check_submission.py --pred /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/rollback_test/prediction.jsonl --data /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/inputs.jsonl --labels /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/official/labels.json
+Official exit status: 0
+Official literal stdout:
+提交文件        : /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/rollback_test/prediction.jsonl
+样本数          : 2100
+ERROR           : 0
+WARN            : 144
+  ! CAIL2026-109113 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M04', 'M05', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109123 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109131 priority_order 未按紧迫度序列排序（期望 ['M03', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109165 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109175 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109184 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M06', 'M14', 'M09', 'M13', 'M15']）
+  ! CAIL2026-109218 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M12', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109220 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M12', 'M04', 'M05', 'M06', 'M07', 'M08', 'M14', 'M09', 'M13', 'M15']）
+  ! CAIL2026-109241 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109252 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109263 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M04', 'M05', 'M06', 'M07', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109268 priority_order 未按紧迫度序列排序（期望 ['M01', 'M03', 'M12', 'M06', 'M13', 'M15']）
+  ! CAIL2026-109272 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M04', 'M05', 'M06', 'M08', 'M13', 'M15']）
+  ! CAIL2026-109277 priority_order 未按紧迫度序列排序（期望 ['M01', 'M12', 'M05', 'M06', 'M13']）
+  ! CAIL2026-109279 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M03', 'M08', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109286 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M04', 'M05', 'M07', 'M13', 'M15', 'M16']）
+  ! CAIL2026-109292 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M12', 'M04', 'M05', 'M06', 'M07', 'M09', 'M10', 'M13', 'M15', 'M16']）
+  ! CAIL2026-109301 priority_order 未按紧迫度序列排序（期望 ['M03', 'M01', 'M02', 'M05', 'M06', 'M14', 'M13', 'M15']）
+  ! CAIL2026-109311 organized_infringement=false 但 organizer_liability 非「不承担责任」
+  ! CAIL2026-109321 priority_order 未按紧迫度序列排序（期望 ['M01', 'M02', 'M12', 'M05', 'M06', 'M14', 'M09', 'M13', 'M15']）
+  … 其余 124 条略
+结果            : 通过（无 ERROR），但有 144 条警告需逐条确认
+
+Rollback script exact command: /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/ROLLBACK.sh /Users/zhang/Desktop/cail/deliverables/CAIL2026_swqqzl_Qwen38_sortonly_v3_20261021/rollback_test/prediction.jsonl
+Rollback literal stdout: ROLLBACK_RESTORE PASS original_sha256=72929a96f039d40ec442f5d656c061817c5ac9ab485dd3f06326746626711232 delivered_revision_unchanged=true
+Rollback exit status: 0
+Restored behavior/status: independent rollback_test/prediction.jsonl restored to original SHA256 and ERROR=0 WARN=144 exit=0. Delivered MODIFIED_FILE.jsonl and prediction.jsonl stay v3, ERROR=0 WARN=10.
+Native provenance: original archive unchanged; 2100 original outputs match native final JSON; 2100 nonempty thinking; 2100 finish_reason=stop. Revised/native exact match rows=1966; the other 134 differ only in priority_order.
+134 sorted rows match v2 exactly; v3 differs from v2 only on the ten reviewed responsibility fields.
+Prior original/v2/review artifacts rehashed unchanged: 92/92
+Negative control: responsibility-field edit is outside the permitted sorting-only scope and is rejected.
+No model rerun, prompt/generation change, competition upload or automation restart occurred.

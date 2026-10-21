@@ -1,0 +1,930 @@
+[
+  {
+    "sample_id": "CAIL2026-109123",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-109123",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D01",
+        "domain_name": "消费维权与差评",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "中",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-109123",
+        "content_raw": "买星辰教育的在线课程踩了大坑，商家售后一直打不通，找客服拒不承认问题，大家千万别买。 说得太对了。 当着一群人的面骂他“恬不知耻”。 所谓内情压根不存在。 联系方式和个人信息一个不落。 连错别字都一样。",
+        "content_form": "评论",
+        "platform": "微信",
+        "publish_time": "2025-09-13T16:20:04+08:00",
+        "visibility": "半公开社区",
+        "contains_personal_info": true,
+        "involves_minor": false,
+        "topic_tags": [
+          "避雷",
+          "消费维权"
+        ]
+      },
+      "context": {
+        "publisher_type": "实名认证大V",
+        "account_verified": true,
+        "follower_level": "10万-100万（头部）",
+        "history_behavior": "持续针对同一对象",
+        "forward_count": 20,
+        "like_count": 93,
+        "comment_count": 20,
+        "propagation_level": "低",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "发布辟谣声明",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "部分失实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-784167",
+        "publisher_role": "发布者",
+        "organizer_id": "O-386286",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-884822",
+        "target_identity": "经营者企业",
+        "platform_id": "PLT-15",
+        "platform_notified": true,
+        "platform_action": "及时处置",
+        "delay_bucket": "LE24H",
+        "platform_measures": "仅删除",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-109123 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-109311",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-109311",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D14",
+        "domain_name": "学术不端质疑",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-109311",
+        "content_raw": "学术圈爆料：李研究员评审中恶意打压同行，学术不容造假。 话里话外都在骂“不知廉耻”。 这事其实查无实据。 句式标点完全一致。",
+        "content_form": "弹幕",
+        "platform": "微博",
+        "publish_time": "2024-03-16T17:27:46+08:00",
+        "visibility": "半公开社区",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "论文"
+        ]
+      },
+      "context": {
+        "publisher_type": "企业官方账号",
+        "account_verified": true,
+        "follower_level": "10万-100万（头部）",
+        "history_behavior": "有侵权处置前科",
+        "forward_count": 568,
+        "like_count": 1251,
+        "comment_count": 249,
+        "propagation_level": "中",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "发布辟谣声明",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "部分失实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-770958",
+        "publisher_role": "发布者",
+        "organizer_id": "O-347609",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-592517",
+        "target_identity": "普通公民",
+        "platform_id": "PLT-11",
+        "platform_notified": false,
+        "platform_action": "未处置",
+        "delay_bucket": "GT3D",
+        "platform_measures": "未采取任何措施",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-109311 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-109425",
+    "restored_field": "prediction.task_B.organizer_liability",
+    "previous_v2_value": "与发布者承担连带责任（教唆、帮助侵权）",
+    "restored_original_value": "不承担责任",
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "不承担责任",
+      "platform_obligation": [
+        "未履行主动巡查与主动处置义务",
+        "未建立便捷投诉举报与处置机制"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": true
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "不承担责任",
+      "platform_obligation": [
+        "未履行主动巡查与主动处置义务",
+        "未建立便捷投诉举报与处置机制"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": true
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-109425",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D10",
+        "domain_name": "食品安全质疑",
+        "is_full_case": true,
+        "is_boundary_sample": true,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-109425",
+        "content_raw": "惊了！汇通商贸的预制菜套餐被曝冷链温度超标一整天，大家千万小心。 接到通知就集中发一轮。 各方都在等待更明确的说法。",
+        "content_form": "帖文",
+        "platform": "抖音",
+        "publish_time": "2024-09-22T01:10:47+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "食品安全",
+          "维权"
+        ]
+      },
+      "context": {
+        "publisher_type": "自媒体运营者",
+        "account_verified": false,
+        "follower_level": "1万-10万（腰部）",
+        "history_behavior": "多次发布",
+        "forward_count": 4144,
+        "like_count": 40350,
+        "comment_count": 1069,
+        "propagation_level": "高",
+        "cross_platform": true,
+        "hot_search": false,
+        "victim_response": "未作出任何回应",
+        "organized_clue": "存在任务分派",
+        "content_truthfulness": "部分失实",
+        "publisher_verified": true
+      },
+      "subject": {
+        "publisher_id": "U-152927",
+        "publisher_role": "发布者",
+        "organizer_id": "",
+        "organizer_role": "",
+        "target_id": "V-465595",
+        "target_identity": "经营者企业",
+        "platform_id": "PLT-07",
+        "platform_notified": false,
+        "platform_action": "未处置",
+        "delay_bucket": "GT3D",
+        "platform_measures": "未采取任何措施",
+        "platform_complaint_channel": "无投诉入口",
+        "profit_clue": false,
+        "consent_obtained": true
+      }
+    },
+    "official_warning_retained": "CAIL2026-109425 organized_infringement=true 但 organizer_liability 未体现组织者责任",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-109770",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-109770",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D05",
+        "domain_name": "娱乐八卦与明星",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": true
+      },
+      "content": {
+        "content_id": "C-109770",
+        "content_raw": "歌手周某的黑料又来了，私下卖给粉丝三无产品，等官方通报。 有人把来龙去脉梳理了一遍。 这起纠纷在当事双方之间仍未取得一致的看法。 双方的负面情绪在沟通中始终没有缓解。",
+        "content_form": "短视频字幕",
+        "platform": "微信",
+        "publish_time": "2024-07-04T14:44:32+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": true,
+        "involves_minor": false,
+        "topic_tags": [
+          "娱乐八卦"
+        ]
+      },
+      "context": {
+        "publisher_type": "机构媒体",
+        "account_verified": true,
+        "follower_level": "10万-100万（头部）",
+        "history_behavior": "多次发布",
+        "forward_count": 19,
+        "like_count": 47,
+        "comment_count": 3,
+        "propagation_level": "低",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "提起民事诉讼",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "完全捏造",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-556412",
+        "publisher_role": "发布者",
+        "organizer_id": "O-171311",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-854021",
+        "target_identity": "公众人物",
+        "platform_id": "PLT-05",
+        "platform_notified": false,
+        "platform_action": "主动处置",
+        "delay_bucket": "PROACTIVE",
+        "platform_measures": "仅限流",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-109770 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-110123",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担赔礼道歉、消除影响、恢复名誉责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担赔礼道歉、消除影响、恢复名誉责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-110123",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D02",
+        "domain_name": "医患纠纷",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "易",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-110123",
+        "content_raw": "#就医# 说说我在同济中医馆的就诊经历：唐宁医生把病人的隐私当八卦到处说，向医院投诉后不了了之，这样的医生必须曝光。 当着一群人的面骂他“恬不知耻”。 连孩子就读的学校信息都被曝了。 句式标点完全一致。",
+        "content_form": "话题标签",
+        "platform": "微信",
+        "publish_time": "2025-03-16T04:00:56+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "就医"
+        ]
+      },
+      "context": {
+        "publisher_type": "匿名小号",
+        "account_verified": false,
+        "follower_level": "<1千（素人）",
+        "history_behavior": "多次发布",
+        "forward_count": 786,
+        "like_count": 2653,
+        "comment_count": 335,
+        "propagation_level": "中",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "未作出任何回应",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "真实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-868826",
+        "publisher_role": "发布者",
+        "organizer_id": "O-212822",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-753495",
+        "target_identity": "普通公民",
+        "platform_id": "PLT-15",
+        "platform_notified": true,
+        "platform_action": "及时处置",
+        "delay_bucket": "LE24H",
+        "platform_measures": "删除并禁言",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-110123 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-110304",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-110304",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D14",
+        "domain_name": "学术不端质疑",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-110304",
+        "content_raw": "同行都看不下去了：周博士论文数据造假、图表雷同，请学校严肃调查。\n#曝光 私密内容被直接晾在网上。 整段搬运别人的原创。 有结算记录，按条付钱。 事情的经过各方说法不一。",
+        "content_form": "短视频文案",
+        "platform": "微信",
+        "publish_time": "2026-08-16T07:07:51+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "质疑"
+        ]
+      },
+      "context": {
+        "publisher_type": "实名认证大V",
+        "account_verified": true,
+        "follower_level": ">100万（超头部）",
+        "history_behavior": "偶有发布",
+        "forward_count": 32,
+        "like_count": 97,
+        "comment_count": 14,
+        "propagation_level": "低",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "公开发文回应",
+        "organized_clue": "存在资金结算",
+        "content_truthfulness": "完全捏造",
+        "publisher_verified": true
+      },
+      "subject": {
+        "publisher_id": "U-377288",
+        "publisher_role": "发布者",
+        "organizer_id": "O-554524",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-748459",
+        "target_identity": "普通公民",
+        "platform_id": "PLT-17",
+        "platform_notified": false,
+        "platform_action": "未处置",
+        "delay_bucket": "GT3D",
+        "platform_measures": "未采取任何措施",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": true
+      }
+    },
+    "official_warning_retained": "CAIL2026-110304 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-110354",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担停止侵害、删除等民事责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担停止侵害、删除等民事责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-110354",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D04",
+        "domain_name": "职场与劳动纠纷",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "中",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-110354",
+        "content_raw": "在微博吐槽：恒信地产的冯雪长期加班不给加班费，我去申请劳动仲裁却被施压，求大家转发曝光。 涉及他人不愿公开的私生活。 文案一字不差，明显同一套模板。 围绕这件事，争议还在持续。",
+        "content_form": "帖文",
+        "platform": "小红书",
+        "publish_time": "2024-09-30T19:50:28+08:00",
+        "visibility": "半公开社区",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "欠薪",
+          "公司"
+        ]
+      },
+      "context": {
+        "publisher_type": "未成年人用户",
+        "account_verified": false,
+        "follower_level": "<1千（素人）",
+        "history_behavior": "持续针对同一对象",
+        "forward_count": 21,
+        "like_count": 92,
+        "comment_count": 6,
+        "propagation_level": "低",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "公开发文回应",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "真实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-481806",
+        "publisher_role": "发布者",
+        "organizer_id": "O-086355",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-764816",
+        "target_identity": "普通公民",
+        "platform_id": "PLT-13",
+        "platform_notified": false,
+        "platform_action": "主动处置",
+        "delay_bucket": "PROACTIVE",
+        "platform_measures": "仅限流",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-110354 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-110441",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "已履行通知—转送—必要措施义务"
+      ],
+      "platform_obligation_fulfilled": true,
+      "platform_liability": "不承担责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-110441",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D05",
+        "domain_name": "娱乐八卦与明星",
+        "is_full_case": true,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": true
+      },
+      "content": {
+        "content_id": "C-110441",
+        "content_raw": "独家：喜剧演员孙某耍大牌辱骂工作人员，附官方通报已确认，这种人早该处理了。 双方的负面情绪在沟通中始终没有缓解。 相关情况此前已有过一轮沟通。",
+        "content_form": "图片配文",
+        "platform": "微信",
+        "publish_time": "2025-09-23T22:28:37+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "明星",
+          "吃瓜"
+        ]
+      },
+      "context": {
+        "publisher_type": "普通网民",
+        "account_verified": false,
+        "follower_level": "<1千（素人）",
+        "history_behavior": "首次发布",
+        "forward_count": 7658,
+        "like_count": 44643,
+        "comment_count": 3321,
+        "propagation_level": "高",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "多次投诉举报未果",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "部分失实",
+        "publisher_verified": true
+      },
+      "subject": {
+        "publisher_id": "U-444950",
+        "publisher_role": "发布者",
+        "organizer_id": "O-628229",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-745473",
+        "target_identity": "公众人物",
+        "platform_id": "PLT-10",
+        "platform_notified": true,
+        "platform_action": "及时处置",
+        "delay_bucket": "LE24H",
+        "platform_measures": "仅删除",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-110441 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-110586",
+    "restored_field": "prediction.task_B.organizer_liability",
+    "previous_v2_value": "与发布者承担连带责任（教唆、帮助侵权）",
+    "restored_original_value": "不承担责任",
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "不承担责任",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担连带责任",
+      "organized_infringement": true
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "不承担责任",
+      "platform_obligation": [
+        "知道或应当知道而未采取必要措施"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担连带责任",
+      "organized_infringement": true
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-110586",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D16",
+        "domain_name": "公共事件与网络谣言",
+        "is_full_case": true,
+        "is_boundary_sample": true,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "难",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-110586",
+        "content_raw": "#关注# 紧急扩散！听说青阳市医院出现群体性传染病，速看速转。 句式标点完全一致。",
+        "content_form": "话题标签",
+        "platform": "百度贴吧",
+        "publish_time": "2026-03-18T06:49:50+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": false,
+        "involves_minor": false,
+        "topic_tags": [
+          "网络谣言",
+          "官方"
+        ]
+      },
+      "context": {
+        "publisher_type": "营销号",
+        "account_verified": false,
+        "follower_level": "1万-10万（腰部）",
+        "history_behavior": "持续针对同一对象",
+        "forward_count": 171421,
+        "like_count": 459180,
+        "comment_count": 6814,
+        "propagation_level": "爆",
+        "cross_platform": true,
+        "hot_search": true,
+        "victim_response": "公开发文回应",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "无从核实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-821485",
+        "publisher_role": "发布者",
+        "organizer_id": "",
+        "organizer_role": "",
+        "target_id": "V-875298",
+        "target_identity": "不特定公众",
+        "platform_id": "PLT-09",
+        "platform_notified": false,
+        "platform_action": "未处置",
+        "delay_bucket": "GT3D",
+        "platform_measures": "未采取任何措施",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-110586 organized_infringement=true 但 organizer_liability 未体现组织者责任",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  },
+  {
+    "sample_id": "CAIL2026-111132",
+    "restored_field": "prediction.task_B.organized_infringement",
+    "previous_v2_value": true,
+    "restored_original_value": false,
+    "original_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "未履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "v3_task_B": {
+      "publisher_liability": "承担上述多项并存的综合责任",
+      "organizer_liability": "与发布者承担连带责任（教唆、帮助侵权）",
+      "platform_obligation": [
+        "未履行主动巡查与主动处置义务"
+      ],
+      "platform_obligation_fulfilled": false,
+      "platform_liability": "承担未尽合理注意义务的相应责任",
+      "organized_infringement": false
+    },
+    "full_input": {
+      "sample_id": "CAIL2026-111132",
+      "meta": {
+        "split": "prelim",
+        "source_category": "SYNTHETIC_TEMPLATE",
+        "domain_code": "D01",
+        "domain_name": "消费维权与差评",
+        "is_full_case": false,
+        "is_boundary_sample": false,
+        "is_expert_hard_negative": false,
+        "is_counterfactual": false,
+        "cf_group": "",
+        "cf_varied_dimension": "",
+        "is_ood": false,
+        "difficulty": "中",
+        "has_truth": false,
+        "text_lean": false
+      },
+      "content": {
+        "content_id": "C-111132",
+        "content_raw": "#差评# 驰行汽车的车载充电器被指质量瑕疵，我投诉到平台，半个月连个人都没回，拖到超期才肯退差价，请平台介入处理。 把手机号和单位都挂了出来。 文案一字不差，明显同一套模板。 这件事的走向还不明确。",
+        "content_form": "话题标签",
+        "platform": "抖音",
+        "publish_time": "2026-06-01T15:13:16+08:00",
+        "visibility": "公开广场",
+        "contains_personal_info": true,
+        "involves_minor": false,
+        "topic_tags": [
+          "避雷",
+          "商家"
+        ]
+      },
+      "context": {
+        "publisher_type": "机构媒体",
+        "account_verified": true,
+        "follower_level": ">100万（超头部）",
+        "history_behavior": "持续针对同一对象",
+        "forward_count": 642,
+        "like_count": 1813,
+        "comment_count": 135,
+        "propagation_level": "中",
+        "cross_platform": false,
+        "hot_search": false,
+        "victim_response": "发布辟谣声明",
+        "organized_clue": "存在统一话术",
+        "content_truthfulness": "无从核实",
+        "publisher_verified": false
+      },
+      "subject": {
+        "publisher_id": "U-994807",
+        "publisher_role": "发布者",
+        "organizer_id": "O-529423",
+        "organizer_role": "组织者/教唆帮助者",
+        "target_id": "V-927224",
+        "target_identity": "经营者企业",
+        "platform_id": "PLT-07",
+        "platform_notified": false,
+        "platform_action": "未处置",
+        "delay_bucket": "GT3D",
+        "platform_measures": "未采取任何措施",
+        "platform_complaint_channel": "便捷可用",
+        "profit_clue": false,
+        "consent_obtained": false
+      }
+    },
+    "official_warning_retained": "CAIL2026-111132 organized_infringement=false 但 organizer_liability 非「不承担责任」",
+    "status": "已恢复原版；实体判断待复核；不为消WARN改判"
+  }
+]
